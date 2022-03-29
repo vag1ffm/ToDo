@@ -32,10 +32,11 @@ h3 {
 }
 .high-lable, .low-lable {
     display: flex;
-    width: 95%;
+    width: 100%;
+    justify-content: center;
 }
-.high-lable input:first-child{
-    width: 410px;
+.high-lable input:first-child {
+    width: 80%;
     height: 45px;
     border: 1px #989898 solid;
     border-right: none;
@@ -43,7 +44,7 @@ h3 {
     border-top-left-radius: 5px;
 }
 .high-lable input:last-child{
-    width: 50px;
+    width: 80px;
     height: 45px;
     background-color: white;
     border:  1px #989898 solid;
@@ -99,7 +100,7 @@ button {
 }
 
 .low-lable input:first-child{
-    width: 410px;
+    width: 83%;
     height: 45px;
     border: 1px #989898 solid;
     border-right: none;
