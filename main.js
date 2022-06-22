@@ -29,7 +29,7 @@ function dobavit(){
             x.value = ''
             updeytofdel()
         }
-        }
+    }
 }
 
 window.addEventListener ("keypress", function (e) {
@@ -48,11 +48,14 @@ function checkbox() {
         if (b.checked === true) {
             let c = document.querySelector('.done-high-divs')
             b.parentElement.style.backgroundColor = '#DCDCDC'
+            b.parentElement.querySelector('p').style.textDecoration = 'line-through'
             c.append(b.parentElement)
         } else {
             let c = document.querySelector('.high-divs')
-           b.parentElement.style.backgroundColor = '#fff'
-           c.append(b.parentElement)
+            b.parentElement.style.backgroundColor = '#fff'
+            b.parentElement.querySelector('p').style.textDecoration = 'none'
+
+            c.append(b.parentElement)
         }
     }
 }
